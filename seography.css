@@ -1,0 +1,153 @@
+/* --- NEW: PRODUCT PAGE STYLES (Immediate Purchase) --- */
+.product-page {
+    padding: 60px 0 80px;
+}
+
+.product-layout {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr; /* Product details on left, deliverables on right */
+    gap: 40px;
+    align-items: start;
+}
+
+@media (max-width: 900px) {
+    .product-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+.product-details {
+    padding: 30px;
+    background: var(--text-light);
+    border-radius: var(--card-radius);
+    box-shadow: 0 4px 20px rgba(17,58,93,0.08);
+    position: sticky; /* Keep this visible on scroll */
+    top: 20px;
+    border-top: 8px solid var(--accent-teal);
+}
+
+.tag {
+    display: inline-block;
+    background: var(--highlight-gold);
+    color: var(--main-blue);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+}
+
+.product-details h1 {
+    font-size: 2.2rem;
+    color: var(--main-blue);
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.summary {
+    font-size: 1.15rem;
+    color: #444;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 25px;
+}
+
+/* Price Box */
+.price-box {
+    text-align: center;
+    padding: 20px 0;
+    background: var(--background-light);
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.old-price {
+    font-size: 0.95rem;
+    color: #888;
+    text-decoration: line-through;
+    margin-bottom: 5px;
+}
+
+.current-price {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--accent-teal);
+    margin: 0;
+}
+
+.delivery-time {
+    font-size: 1rem;
+    color: var(--main-blue);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.buy-now {
+    width: 100%;
+    text-align: center;
+}
+
+.guarantee {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+/* Deliverables Section */
+.deliverables-section h2 {
+    font-size: 2rem;
+    color: var(--main-blue);
+    margin-top: 0;
+    margin-bottom: 30px;
+    border-bottom: 2px solid var(--highlight-gold);
+    padding-bottom: 10px;
+}
+
+.deliverables-list {
+    list-style: none;
+    padding: 0;
+}
+
+.deliverables-list li {
+    background: var(--text-light);
+    padding: 20px;
+    border-left: 5px solid var(--accent-teal);
+    border-radius: 0 var(--card-radius) var(--card-radius) 0;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.deliverables-list h4 {
+    color: var(--main-blue);
+    margin: 0 0 5px 0;
+    font-size: 1.25rem;
+}
+
+/* FAQ Section */
+.faq-section {
+    margin-top: 60px;
+    padding-top: 30px;
+    border-top: 1px solid #ddd;
+}
+
+.faq-section h2 {
+    text-align: center;
+    color: var(--accent-teal);
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    background: var(--text-light);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 15px;
+    border-left: 3px solid var(--highlight-gold);
+}
+
+.faq-item h4 {
+    color: var(--main-blue);
+    margin: 0 0 8px 0;
+}
