@@ -1,6 +1,6 @@
 /*
  * 1. DEFINE GLOBAL CSS VARIABLES
- * These colors/values are missing and MUST be defined for the CSS below to work.
+ * These are essential for the rest of your CSS to be applied by the browser.
  */
 :root {
     --main-blue: #113A5D;       /* Dark Navy Blue */
@@ -11,11 +11,7 @@
     --card-radius: 8px;         /* Standard border radius */
 }
 
-/* --- BASE STYLES (Assume these are needed for basic layout from your design) --- */
-/* Add your container, header, nav, button, etc., base styles here if they are missing
- * or define them minimally to make the product page look right.
- * I'm including minimal base styles for demonstration:
- */
+/* --- BASE STYLES (Minimal styles for page structure) --- */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
