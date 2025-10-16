@@ -1,4 +1,92 @@
-/* --- NEW: PRODUCT PAGE STYLES (Immediate Purchase) --- */
+/*
+ * 1. DEFINE GLOBAL CSS VARIABLES
+ * These colors/values are missing and MUST be defined for the CSS below to work.
+ */
+:root {
+    --main-blue: #113A5D;       /* Dark Navy Blue */
+    --accent-teal: #008080;     /* Strong Teal/Cyan */
+    --highlight-gold: #FFD700;  /* Gold/Yellow for tags/accents */
+    --text-light: #ffffff;      /* White */
+    --background-light: #f9f9f9; /* Off-white/Light gray background */
+    --card-radius: 8px;         /* Standard border radius */
+}
+
+/* --- BASE STYLES (Assume these are needed for basic layout from your design) --- */
+/* Add your container, header, nav, button, etc., base styles here if they are missing
+ * or define them minimally to make the product page look right.
+ * I'm including minimal base styles for demonstration:
+ */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-light);
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: var(--main-blue);
+    color: var(--text-light);
+    padding: 15px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.main-nav a {
+    color: var(--text-light);
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: var(--card-radius);
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.button.primary {
+    background-color: var(--accent-teal);
+    color: var(--text-light);
+    border: none;
+}
+
+.button.primary:hover {
+    background-color: #006666; /* Darker teal on hover */
+}
+
+.button.large-button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+}
+
+.footer {
+    background-color: #333;
+    color: #ccc;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* --- PRODUCT PAGE STYLES (Immediate Purchase) --- */
 .product-page {
     padding: 60px 0 80px;
 }
